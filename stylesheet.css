@@ -1,7 +1,3 @@
-#first {
-	color:red;
-}
-
 .sortElement {
 		display:inline-block;		
 		width:100px;
@@ -38,8 +34,8 @@
 
 #bucketMaster{
 	position:fixed;
-	left:15%;
-	top:35%;
+	left:27%;
+	top:25%;
 	width:800px;
 	height:210px;
 	background-color: orange;
