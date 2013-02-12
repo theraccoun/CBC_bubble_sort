@@ -1,0 +1,78 @@
+#first {
+	color:red;
+}
+
+.sortElement {
+		display:inline-block;		
+		width:100px;
+		height:100px;
+		top:15px;
+		left:15px;
+		padding:0.5em;
+		background-color:#87CEFF;
+		border-style:solid;
+		border-width:3px;
+		border-color:black;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;	
+}
+
+.number {
+	font-size:200%;
+	vertical-align:center;
+	text-align:center;
+}
+
+.bucket {
+	display:inline-block;
+	width:150px;
+	height:150px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:yellow;
+	border-style: solid;
+	border-width:3px;
+	border-color:black;
+}
+
+#bucketMaster{
+	position:fixed;
+	left:15%;
+	top:35%;
+	width:800px;
+	height:210px;
+	background-color: orange;
+	border-style:solid;
+	border-color:black;
+	border-width:3px;
+}
+/*
+#b1{
+	top:50%;
+	left:60px;
+	border-color:red;
+}
+
+#b2{
+	border-color:green;
+	top:200px;
+	left:160px;
+}
+
+#b3{
+	top:200px;
+	left:260px;
+}
+
+#b4{
+	top:200px;
+	left:360px;
+}
+
+#b5{
+	top:200px;
+	left:4600px;
+}*/
+
+
