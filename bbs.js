@@ -24,6 +24,7 @@ function OnMouseDown(e){
     // Handle IE case for event
     if (e == null)
         e = window.event;
+
     var target = e.target != null ? e.target : e.srcElement;
 
     if(target.className == 'sortElement'){
@@ -36,10 +37,13 @@ function OnMouseDown(e){
         elementDragX = ExtractNumber(target.style.left);
         elementDragY = ExtractNumber(target.style.top);
 
+//        console.log("first X: " + elementDragX);
+//        console.log("first Y: " + elementDragY);
+
         dragElement = target;
 
         elementDragZ0 = target.style.zIndex;
-        target.style.zIndex = 10000;
+        target.style.zIndex = 1000;
 
         document.onmousemove = MouseDrag;
 
@@ -56,8 +60,11 @@ function MouseDrag(e){
 
     dragElement.style.left = (elementDragX + e.clientX - startMouseX) + 'px';
     dragElement.style.top = (elementDragY + e.clientY - startMouseY) + 'px';
-    alert(e.clientX);
 
+    console.log("elemetnDragX: " + elementDragX);
+    console.log("new clientX: " + e.clientX);
+    console.log("startMouseX: " + startMouseX);
+    console.log(dragElement.style.left);
 }
 
 function OnMouseUp(e){
