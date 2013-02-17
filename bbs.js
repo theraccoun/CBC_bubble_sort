@@ -1,6 +1,8 @@
 var MAX_SORT_ELEMENTS = 5;
 
-var sortliststate = {};
+var sortliststate = {
+    firstClicked: false
+};
 
 
 function init(){
@@ -13,15 +15,24 @@ function drawInitialSortElements(){
 
         for(var i=0; i < MAX_SORT_ELEMENTS; ++i){
             var $bucket = jQuery('<div/>', {
-                id: i,
+                id: 'buck' + (i).toString(),
                 class: 'bucket'
             });
+            console.log($bucket.attr('id'));
             var $switchToolHead = $("<div class='switchToolHead'></div>");
+            $switchToolHead.data('number', i);
             $switchToolHead.appendTo($bucket);
-            alert($switchToolHead.parent().attr('id'));
             $switchToolHead.button().click(function(event){
                 $(this).toggleClass("showSWTClicked");
+
+                if(!sortliststate.firstClicked){
+                    sortliststate.firstClicked = $(this).data('number');
+                } else{
+                    sortliststate.firstClicked = false;
+                }
+                alert("cursortele: " + getSWTCurrentSortElement($(this)) + " number: " + $(this).data('number'));
             });
+
             $('#bucketMaster').append($bucket);
         }
 
@@ -36,8 +47,14 @@ function drawInitialSortElements(){
                 containment: '#bucketMaster'
             });
 
+//            sortliststate['SWTHeads'].append()
+//            sortliststate['list'].append(rand);
             $(this).append($sortElement);
         });
+}
+
+function getSWTCurrentSortElement(swt){
+    return swt.parent().find('.sortElement').text();
 }
 
 function nextIteration(){
