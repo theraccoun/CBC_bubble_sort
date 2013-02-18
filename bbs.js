@@ -1,7 +1,7 @@
 var MAX_SORT_ELEMENTS = 5;
 
 var sortliststate = {
-    firstClicked: false
+    firstClicked: null
 };
 
 
@@ -14,10 +14,14 @@ function drawInitialSortElements(){
 
 
         for(var i=0; i < MAX_SORT_ELEMENTS; ++i){
+
             var $bucket = jQuery('<div/>', {
                 id: 'buck' + (i).toString(),
                 class: 'bucket'
             });
+            $bucket.css("width", (100/MAX_SORT_ELEMENTS - 1).toString() + "%");
+            $bucket.css("height", "98%");
+
             console.log($bucket.attr('id'));
             var $switchToolHead = $("<div class='switchToolHead'></div>");
             $switchToolHead.data('number', i);
@@ -25,12 +29,19 @@ function drawInitialSortElements(){
             $switchToolHead.button().click(function(event){
                 $(this).toggleClass("showSWTClicked");
 
-                if(!sortliststate.firstClicked){
-                    sortliststate.firstClicked = $(this).data('number');
+                if(sortliststate.firstClicked == null){
+                    sortliststate.firstClicked = $(this)
                 } else{
-                    sortliststate.firstClicked = false;
+                    sortliststate.firstClicked.parent().find('.sortElement').css('zIndex', 1000);
+                    console.log("meow: " + sortliststate.firstClicked.parent().offset().left);
+                    console.log("cheese" + $(this).parent().offset().left);
+                    var firstAnimateAmount = (sortliststate.firstClicked.parent().offset().left - $(this).parent().offset().left).toString();
+
+                    console.log("firstanimateamount: " + firstAnimateAmount);
+                    sortliststate.firstClicked.parent().find('.sortElement').animate({left:'-=' + firstAnimateAmount}, 500);
+                    $(this).parent().find('.sortElement').animate({left:'+=' + firstAnimateAmount}, 500);
+                    sortliststate.firstClicked = null;
                 }
-                alert("cursortele: " + getSWTCurrentSortElement($(this)) + " number: " + $(this).data('number'));
             });
 
             $('#bucketMaster').append($bucket);
@@ -46,10 +57,12 @@ function drawInitialSortElements(){
             $sortElement.draggable({
                 containment: '#bucketMaster'
             });
-
-//            sortliststate['SWTHeads'].append()
-//            sortliststate['list'].append(rand);
             $(this).append($sortElement);
+
+            var parentHeight = $sortElement.parent().height();
+            console.log("ParentHeighT: " + parentHeight);
+            console.log($sortElement.zIndex());
+            $sortElement.css("height", parentHeight.toString()  + "px");
         });
 }
 
