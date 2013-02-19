@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="61ef4a2b-e70e-45c4-a319-b719e7f7a550" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bbs.js" afterPath="$PROJECT_DIR$/bbs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheet.css" />
     </list>
     <ignored path="bubble_sort.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,19 +22,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bbs.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bbs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="86" selection-end="86" vertical-scroll-proportion="0.040106952">
+            <state line="44" column="54" selection-start="1372" selection-end="1372" vertical-scroll-proportion="-24.807692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samp1.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375">
+            <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
               <folding />
             </state>
           </provider>
@@ -241,16 +240,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samp1.html">
+    <entry file="file://$PROJECT_DIR$/bbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375">
+        <state line="44" column="54" selection-start="1372" selection-end="1372" vertical-scroll-proportion="-24.807692">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bbs.js">
+    <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="86" selection-end="86" vertical-scroll-proportion="0.040106952">
+        <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
           <folding />
         </state>
       </provider>
