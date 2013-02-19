@@ -36,28 +36,13 @@ function drawInitialSortElements(){
 
                 if(sortliststate.firstClicked == null){
                     sortliststate.firstClicked = $(this)
-                } else{
+                }
+                else if(sortliststate.firstClicked.data('number') != $(this).data('number')){
                     sortliststate.secondClicked = $(this);
-
-                    var firstIndex = sortliststate.firstClicked.data('number');
-                    var secondIndex = $(this).data('number');
-                    var firstSort = sortElements[firstIndex];
-                    var secondSort = sortElements[secondIndex];
-
-                    var firstAnimateAmount = (firstSort.offset().left - secondSort.offset().left).toString();
-                    firstSort.animate({left:'-=' + firstAnimateAmount}, SWAP_SPEED, function(){
-                        sortElements[firstIndex] = secondSort;
-                        sortliststate.firstClicked.removeClass(SHOW_SWT_CLICKED);
-                        sortliststate.firstClicked = null;
-                    });
-
-                    secondSort.animate({left:'+=' + firstAnimateAmount}, SWAP_SPEED, function(){
-                        sortElements[secondIndex] = firstSort
-                        sortliststate.secondClicked.removeClass(SHOW_SWT_CLICKED);
-                        sortliststate.secondClicked = null;
-                    });
-
-
+                    animateSwap();
+                }
+                else{
+                    sortliststate.firstClicked = null;
                 }
             });
 
@@ -80,6 +65,28 @@ function drawInitialSortElements(){
             var parentHeight = $sortElement.parent().height();
             $sortElement.css("height", parentHeight.toString()  + "px");
         });
+}
+
+function animateSwap(){
+
+    var firstIndex = sortliststate.firstClicked.data('number');
+    var secondIndex = sortliststate.secondClicked.data('number');
+    var firstSort = sortElements[firstIndex];
+    var secondSort = sortElements[secondIndex];
+
+    var firstAnimateAmount = (firstSort.offset().left - secondSort.offset().left).toString();
+    firstSort.animate({left:'-=' + firstAnimateAmount}, SWAP_SPEED, function(){
+        sortElements[firstIndex] = secondSort;
+        sortliststate.firstClicked.removeClass(SHOW_SWT_CLICKED);
+        sortliststate.firstClicked = null;
+    });
+
+    secondSort.animate({left:'+=' + firstAnimateAmount}, SWAP_SPEED, function(){
+        sortElements[secondIndex] = firstSort
+        sortliststate.secondClicked.removeClass(SHOW_SWT_CLICKED);
+        sortliststate.secondClicked = null;
+    });
+
 }
 
 function getSWTCurrentSortElement(swt){
