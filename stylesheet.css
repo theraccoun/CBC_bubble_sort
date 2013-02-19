@@ -1,5 +1,6 @@
 .sortElement {
     position:relative;
+    z-index: 1000;
     background-color:#87CEFF;
     border-style:solid;
     border-width:3px;
