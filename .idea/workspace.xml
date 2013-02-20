@@ -22,19 +22,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bbs.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bbs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="17" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.86229944">
+            <state line="49" column="30" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samp1.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375">
+            <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
               <folding />
             </state>
           </provider>
@@ -240,16 +240,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samp1.html">
+    <entry file="file://$PROJECT_DIR$/bbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375">
+        <state line="49" column="30" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bbs.js">
+    <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="17" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.86229944">
+        <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
           <folding />
         </state>
       </provider>
