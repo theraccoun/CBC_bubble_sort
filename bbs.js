@@ -1,11 +1,13 @@
-var MAX_SORT_ELEMENTS = 5;
+var MAX_SORT_ELEMENTS = 8;
 var SHOW_SWT_CLICKED = "showSWTClicked";
 var SWAP_SPEED = 400;
+var PERCENT_BUCKMASTER_PAD = 0.30;
+var BUCKET_WIDTH = (100/MAX_SORT_ELEMENTS - 0.6).toString() + "%";
 
 var sortliststate = {
     firstClicked: null,
     secondClicked: null,
-
+    order: new Array(),
     curIteration: -1
 };
 
@@ -15,11 +17,23 @@ var correctList = new Array();
 
 
 function init(){
+    $('#maxSortButton').click(function(){
+        MAX_SORT_ELEMENTS = $('#max_sort_text').val();
+        alert(MAX_SORT_ELEMENTS);
+        $(document).removeChild('#bucketMaster');
+    });
     drawInitialSortElements();
 }
 
 function drawInitialSortElements(){
-    sortliststate.order = new Array();
+
+    var docWidth = $(document).width();
+    var widthWithPad = docWidth - PERCENT_BUCKMASTER_PAD * docWidth;
+    var bucketWidth = Math.floor(widthWithPad/MAX_SORT_ELEMENTS);
+    var buckMasterWidth = bucketWidth  * MAX_SORT_ELEMENTS;
+
+    $('#bucketMaster').css('width', buckMasterWidth);
+    $('#bucketMaster').css('height', bucketWidth);
 
 
     for(var i=0; i < MAX_SORT_ELEMENTS; ++i){
@@ -28,13 +42,17 @@ function drawInitialSortElements(){
             id: 'buck' + (i).toString(),
             class: 'bucket'
         });
-        $bucket.css("width", (100/MAX_SORT_ELEMENTS - 0.6).toString() + "%");
-        $bucket.css("height", "98%");
+        $bucket.css("width", BUCKET_WIDTH);
+        $bucket.css("height", "99%");
+
+        $('#bucketMaster').append($bucket);
 
         console.log($bucket.attr('id'));
         var $switchToolHead = $("<div class='switchToolHead'></div>");
         $switchToolHead.data('index', i);
         $switchToolHead.appendTo($bucket);
+        var height = $switchToolHead.height();
+        $switchToolHead.css('top', -(height + 10));
         $switchToolHead.button().click(function(event){
             $(this).toggleClass(SHOW_SWT_CLICKED);
 
@@ -55,7 +73,6 @@ function drawInitialSortElements(){
             }
         });
 
-        $('#bucketMaster').append($bucket);
     }
 
     var originalList = new Array();
@@ -64,14 +81,14 @@ function drawInitialSortElements(){
 
         var rand = Math.floor(Math.random()*11);
         sortliststate.order.push(rand);
-        var $sortElement = $("<div class='sortElement'>" + rand + "</div>");
+        var $sortElement = $("<div class='sortElement'><p>" + rand + "</p></div>");
 
         sortElements[i] = $sortElement;
 
         $(this).append($sortElement);
 
         var parentHeight = $sortElement.parent().height();
-        $sortElement.css("height", parentHeight.toString()  + "px");
+        $sortElement.css("height", (parentHeight-7).toString()  + "px");
 
         originalList.push(rand);
     });

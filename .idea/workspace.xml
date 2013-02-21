@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="61ef4a2b-e70e-45c4-a319-b719e7f7a550" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bbs.js" afterPath="$PROJECT_DIR$/bbs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samp1.html" afterPath="$PROJECT_DIR$/samp1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheet.css" />
     </list>
     <ignored path="bubble_sort.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +27,7 @@
       <file leaf-file-name="bbs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="30" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+            <state line="83" column="74" selection-start="2513" selection-end="2513" vertical-scroll-proportion="-16.73077">
               <folding />
             </state>
           </provider>
@@ -34,7 +36,7 @@
       <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
+            <state line="12" column="60" selection-start="489" selection-end="502" vertical-scroll-proportion="0.24">
               <folding />
             </state>
           </provider>
@@ -43,7 +45,7 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+            <state line="45" column="26" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -235,21 +237,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+        <state line="45" column="26" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="30" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+        <state line="83" column="74" selection-start="2513" selection-end="2513" vertical-scroll-proportion="-16.73077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3">
+        <state line="12" column="60" selection-start="489" selection-end="502" vertical-scroll-proportion="0.24">
           <folding />
         </state>
       </provider>
