@@ -16,9 +16,9 @@ var correctList = new Array();
 
 
 function init(){
-    var bucketMaster = new BucketMaster(4, 0.3, 400);
+    var bucketMaster = new BucketMaster(8, 0.3, 400);
     bucketMaster.initializeBuckets();
-    bucketMaster.addToDom();
+//    bucketMaster.addToDom();
 //    drawInitialSortElements();
 }
 

@@ -27,6 +27,8 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
             class: 'offset3'
         });
 
+        this.$jqBucketMaster.appendTo($('body'));
+
         this.$jqBucketMaster.css('width', buckMasterWidth);
         this.$jqBucketMaster.css('height', bucketWidth);
 
@@ -91,8 +93,6 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
     }
 
     this.addToDom = function() {
-
-        alert(this.$jqBucketMaster.attr('id'));
 
         if(this.$jqBucketMaster != null){
             this.$jqBucketMaster.appendTo($('body'));
