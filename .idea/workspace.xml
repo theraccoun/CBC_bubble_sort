@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61ef4a2b-e70e-45c4-a319-b719e7f7a550" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bbs.js" afterPath="$PROJECT_DIR$/bbs.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/switchToolHead.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samp1.html" afterPath="$PROJECT_DIR$/samp1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheet.css" />
     </list>
     <ignored path="bubble_sort.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +27,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bbs.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs.js">
+      <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/samp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="74" selection-start="2513" selection-end="2513" vertical-scroll-proportion="-16.73077">
+            <state line="21" column="21" selection-start="947" selection-end="947" vertical-scroll-proportion="0.14246947">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samp1.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="489" selection-end="502" vertical-scroll-proportion="0.24">
+            <state line="13" column="31" selection-start="540" selection-end="540" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheet.css">
+        <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="26" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/bbs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="32" selection-start="122" selection-end="122" vertical-scroll-proportion="2.8846154">
               <folding />
             </state>
           </provider>
@@ -64,9 +76,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/samp1.html" />
         <option value="$PROJECT_DIR$/stylesheet.css" />
         <option value="$PROJECT_DIR$/bbs.js" />
+        <option value="$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html" />
+        <option value="$PROJECT_DIR$/js/bbs.js" />
+        <option value="$PROJECT_DIR$/samp1.html" />
+        <option value="$PROJECT_DIR$/css/stylesheet.css" />
       </list>
     </option>
   </component>
@@ -118,6 +133,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bubble_sort" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bubble_sort" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bubble_sort" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bubble_sort" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -125,6 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -214,13 +258,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bbs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="35" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
@@ -228,30 +265,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/js/jquery-1.9.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="17" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="540" selection-end="540" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/js/bbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="26" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+        <state line="3" column="32" selection-start="122" selection-end="122" vertical-scroll-proportion="2.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bbs.js">
+    <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="74" selection-start="2513" selection-end="2513" vertical-scroll-proportion="-16.73077">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="489" selection-end="502" vertical-scroll-proportion="0.24">
+        <state line="21" column="21" selection-start="947" selection-end="947" vertical-scroll-proportion="0.14246947">
           <folding />
         </state>
       </provider>
