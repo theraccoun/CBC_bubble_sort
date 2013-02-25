@@ -16,10 +16,8 @@ var correctList = new Array();
 
 
 function init(){
-    var bucketMaster = new BucketMaster(8, 0.3, 400);
-    bucketMaster.initializeBuckets();
-//    bucketMaster.addToDom();
-//    drawInitialSortElements();
+    var bucketMaster = new BucketMaster(8, 0.3, bubbleSort);
+    bucketMaster.createAndAppend();
 }
 
 function drawInitialSortElements(){
@@ -90,52 +88,51 @@ function drawInitialSortElements(){
         originalList.push(rand);
     });
 
-    bubbleSort(originalList);
 }
 
-function isCorrectMove(index1, index2){
-    var curIter = sortliststate.curIteration;
+var bubbleSort = {
+    isCorrectMove: function(correctList, curIter, index1, index2){
 
-    var isIndex1Correct = (correctList[curIter][0] == index1 || correctList[curIter][0] == index2);
-    var isIndex2Correct = (correctList[curIter][1] == index1 || correctList[curIter][1] == index2);
+        var isIndex1Correct = (correctList[curIter][0] == index1 || correctList[curIter][0] == index2);
+        var isIndex2Correct = (correctList[curIter][1] == index1 || correctList[curIter][1] == index2);
 
-    var isRight = isIndex1Correct && isIndex2Correct;
+        var isRight = isIndex1Correct && isIndex2Correct;
 
-    if(!isRight){
-        alert("WOW TERRIBLE YOU SUCK BAD JOB!");
-    }
-    else if(isRight && curIter == correctList.length -1){
-        alert("YOU WON GOOD JOB YOU KNOW BUBBLE SORT CONGRATS!");
-    }
+        if(!isRight){
+            alert("WOW TERRIBLE YOU SUCK BAD JOB!");
+        }
+        else if(isRight && curIter == correctList.length -1){
+            alert("YOU WON GOOD JOB YOU KNOW BUBBLE SORT CONGRATS!");
+        }
 
 
-    return isIndex1Correct && isIndex2Correct;
+        return isIndex1Correct && isIndex2Correct;
+    },
 
-}
+    bubbleSort: function(correctList, list){
+        var swapped = true;
 
-function bubbleSort(list){
-    var swapped = true;
+        while(swapped){
+            swapped = false;
+            for(var i=0; i < list.length - 1; ++i){
 
-    while(swapped){
-        swapped = false;
-        for(var i=0; i < list.length - 1; ++i){
+                if(list[i] > list[i+1]){
+                    var temp = list[i];
+                    list[i] = list[i+1];
+                    list[i+1] = temp;
 
-            if(list[i] > list[i+1]){
-                var temp = list[i];
-                list[i] = list[i+1];
-                list[i+1] = temp;
-
-                correctList.push([i, i+1]);
-                swapped = true;
+                    correctList.push([i, i+1]);
+                    swapped = true;
+                }
             }
         }
-    }
 
-    for(var j=0; j<correctList.length; ++j){
-        console.log(correctList[j]);
+        for(var j=0; j<correctList.length; ++j){
+            console.log(correctList[j]);
+        }
     }
-
 }
+
 
 function animateSwap(){
 

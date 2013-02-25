@@ -1,8 +1,8 @@
-function BucketMaster(numElements, percentWidth, swapSpeed){
+function BucketMaster(numElements, percentWidth, sortAlgo){
 
     this.numElements = numElements;
     this.percentWidth = percentWidth;
-    this.swapSpeed = swapSpeed;
+    this.sortAlgo = sortAlgo;
 
     this.sortliststate = {
         firstClicked: null,
@@ -12,8 +12,9 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
     };
 
     this.sortElements = {};
+    this.correctList = new Array();
 
-    this.initializeBuckets = function(){
+    this.createAndAppend = function(){
 
         var buckMaster = this;
 
@@ -63,7 +64,7 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
                     buckMaster.sortliststate.curIteration++;
 
                     buckMaster.animateSwap(buckMaster);
-//                    isCorrectMove(index1, index2);
+                    buckMaster.sortAlgo.isCorrectMove(buckMaster.correctList, buckMaster.sortliststate.curIteration, index1, index2);
                 }
                 else{
                     buckMaster.sortliststate.firstClicked = null;
@@ -89,6 +90,8 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
 
             originalList.push(rand);
         });
+
+        this.sortAlgo.bubbleSort(this.correctList, originalList);
 
     }
 
@@ -121,6 +124,5 @@ function BucketMaster(numElements, percentWidth, swapSpeed){
         });
 
     }
-
 
 }
