@@ -8,6 +8,13 @@ body{
     }
 }
 
+.navbar-inner {
+    background-color: #4e8847; /* background color will be black for all browsers */
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
 .sortElement {
     position:absolute;
     z-index: 1000;

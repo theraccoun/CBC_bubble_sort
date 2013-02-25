@@ -2,7 +2,6 @@ var MAX_SORT_ELEMENTS = 6;
 var SHOW_SWT_CLICKED = "showSWTClicked";
 var SWAP_SPEED = 400;
 var PERCENT_BUCKMASTER_PAD = 0.30;
-var BUCKET_WIDTH = (100/MAX_SORT_ELEMENTS - 0.6).toString() + "%";
 
 var sortliststate = {
     firstClicked: null,
@@ -17,12 +16,10 @@ var correctList = new Array();
 
 
 function init(){
-    $('#maxSortButton').click(function(){
-        MAX_SORT_ELEMENTS = $('#max_sort_text').val();
-        alert(MAX_SORT_ELEMENTS);
-        $(document).removeChild('#bucketMaster');
-    });
-    drawInitialSortElements();
+    var bucketMaster = new BucketMaster(4, 0.3, 400);
+    bucketMaster.initializeBuckets();
+    bucketMaster.addToDom();
+//    drawInitialSortElements();
 }
 
 function drawInitialSortElements(){
@@ -42,7 +39,7 @@ function drawInitialSortElements(){
             id: 'buck' + (i).toString(),
             class: 'bucket'
         });
-        $bucket.css("width", BUCKET_WIDTH);
+        $bucket.css("width", bucketWidth);
         $bucket.css("height", "99%");
 
         $('#bucketMaster').append($bucket);
