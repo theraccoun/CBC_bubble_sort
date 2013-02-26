@@ -1,25 +1,3 @@
-var MAX_SORT_ELEMENTS = 6;
-var SHOW_SWT_CLICKED = "showSWTClicked";
-var SWAP_SPEED = 400;
-var PERCENT_BUCKMASTER_PAD = 0.30;
-
-var sortliststate = {
-    firstClicked: null,
-    secondClicked: null,
-    order: new Array(),
-    curIteration: -1
-};
-
-var sortElements = {};
-
-var correctList = new Array();
-
-
-function init(){
-    var bucketMaster = new BucketMaster(6, 0.3, bubbleSort);
-    bucketMaster.createAndAppend();
-}
-
 var bubbleSort = {
     isCorrectMove: function(correctList, curIter, index1, index2){
 
@@ -62,7 +40,3 @@ var bubbleSort = {
         }
     }
 }
-
-$(document).ready(function(){
-    init();
-});

@@ -103,6 +103,13 @@ function BucketMaster(numElements, percentWidth, sortAlgo){
 
     }
 
+    this.removeMasterFromDom = function(){
+
+        if(this.$jqBucketMaster != null){
+            this.$jqBucketMaster.remove();
+        }
+    }
+
     this.animateSwap = function(buckMaster) {
 
         var firstIndex = buckMaster.sortliststate.firstClicked.data('index');
