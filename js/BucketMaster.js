@@ -91,7 +91,7 @@ function BucketMaster(numElements, percentWidth, sortAlgo){
             originalList.push(rand);
         });
 
-        this.sortAlgo.bubbleSort(this.correctList, originalList);
+        buckMaster.sortAlgo.sort(this.correctList, originalList);
 
     }
 

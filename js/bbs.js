@@ -17,7 +17,7 @@ var bubbleSort = {
         return isIndex1Correct && isIndex2Correct;
     },
 
-    bubbleSort: function(correctList, list){
+    sort: function(correctList, list){
         var swapped = true;
 
         while(swapped){

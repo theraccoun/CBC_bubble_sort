@@ -7,6 +7,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/BucketMaster.js"></script>
     <script type="text/javascript" src="js/bbs.js"></script>
+    <script type="text/javascript" src="js/MergeSort.js"></script>
     <script type="text/javascript" src="js/AlgoManager.js"></script>
     <title> Concept Before Code </title>
 </head>
@@ -39,19 +40,38 @@
     </div>
 
     <div class="row">
-            <div class="span3">
-                <nav>
-                    <ul class="nav nav-list">
-                        <li class="nav-header">Sorting Algorithms</li>
-                        <li class="divider"></li>
-                        <li class="active"><a href="#bubble_sort"><i class="icon-chevron-right"></i>Bubble Sort </a></li>
-                        <li><a onclick="runMergeSort()"><i class="icon-chevron-right"></i>Merge Sort </a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="span3">
+            <nav>
+                <ul class="nav nav-list">
+                    <li class="nav-header">Sorting Algorithms</li>
+                    <li class="divider"></li>
+                    <li class="active" id="liBubbleSort"><a onclick="toggleActiveSideNav('#liBubbleSort'); runSort(bubbleSort)">
+                        <i class="icon-chevron-right"></i>Bubble Sort </a>
+                    </li>
+                    <li id="liMergeSort"><a onclick="toggleActiveSideNav('#liMergeSort'); runSort(MergeSort)">
+                        <i class="icon-chevron-right"></i>Merge Sort </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
+        <div class="btn-group offset12">
+            <button class="btn btn-danger">Array Size</button>
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a onclick="setMaxSortElements('Big')">Big</a></li>
+                <li><a onclick="setMaxSortElements('Medium')">Medium</a></li>
+                <li><a onclick="setMaxSortElements('Small')">Small</a></li>
+            </ul>
+        </div>
     </div>
+
+
+</div>
+
+
 </div>
 
 

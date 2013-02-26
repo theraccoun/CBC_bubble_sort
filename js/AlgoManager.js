@@ -5,16 +5,45 @@ var PERCENT_BUCKMASTER_PAD = 0.30;
 
 var bucketMaster;
 
+var curSortAlgo;
+
 function init(){
-    runSort("bubbleSort");
+    runSort(bubbleSort);
+}
+
+function toggleActiveSideNav(curButton){
+    $('.active').removeClass('active');
+    $(curButton).addClass('active');
+}
+
+function setMaxSortElements(size){
+
+    switch(size)
+    {
+        case "Big":
+            MAX_SORT_ELEMENTS = 8;
+            break;
+        case "Medium":
+            MAX_SORT_ELEMENTS = 6;
+            break;
+        case "Small":
+            MAX_SORT_ELEMENTS = 4;
+            break;
+        default:
+            alert("DEFAULT");
+    }
+
+    runSort(curSortAlgo);
 }
 
 function runSort(algo){
 
+    curSortAlgo = algo;
+
     if(bucketMaster)
         bucketMaster.removeMasterFromDom();
 
-    bucketMaster = new BucketMaster(6, 0.3, algo);
+    bucketMaster = new BucketMaster(MAX_SORT_ELEMENTS, PERCENT_BUCKMASTER_PAD, algo);
     bucketMaster.createAndAppend();
 
 }
