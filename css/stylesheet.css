@@ -28,7 +28,13 @@ body{
     border-radius: 100%;
 
     font-size:200%;
+    display: table;
     text-align:center;
+}
+
+.sortElement > .cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .switchToolHead{

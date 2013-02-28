@@ -79,7 +79,7 @@ function BucketMaster(numElements, percentWidth, sortAlgo){
 
             var rand = Math.floor(Math.random()*11);
             buckMaster.sortliststate.order.push(rand);
-            var $sortElement = $("<div class='sortElement'><p>" + rand + "</p></div>");
+            var $sortElement = $("<div class='sortElement'><div class='cell'><p>" + rand + "</p></div></div>");
 
             buckMaster.sortElements[i] = $sortElement;
 

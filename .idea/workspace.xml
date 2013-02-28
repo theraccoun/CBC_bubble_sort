@@ -6,10 +6,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/jquery-1.9.1.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheet.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/switchToolHead.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/AlgoManager.js" afterPath="$PROJECT_DIR$/js/AlgoManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesheet.css" afterPath="$PROJECT_DIR$/css/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/BucketMaster.js" afterPath="$PROJECT_DIR$/js/BucketMaster.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/MergeSort.js" afterPath="$PROJECT_DIR$/js/MergeSort.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bbs.js" afterPath="$PROJECT_DIR$/js/bbs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samp1.html" afterPath="$PROJECT_DIR$/samp1.html" />
     </list>
     <ignored path="bubble_sort.iws" />
@@ -42,7 +40,7 @@
       <file leaf-file-name="samp1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="42" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.6477901">
+            <state line="45" column="46" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.6685083">
               <folding />
             </state>
           </provider>
@@ -51,7 +49,7 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="35" column="24" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +85,7 @@
       <file leaf-file-name="BucketMaster.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/BucketMaster.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="5" selection-start="3504" selection-end="3504" vertical-scroll-proportion="-63.46154">
+            <state line="81" column="102" selection-start="2861" selection-end="2861" vertical-scroll-proportion="-16.153847">
               <folding />
             </state>
           </provider>
@@ -108,15 +106,15 @@
       <list>
         <option value="$PROJECT_DIR$/stylesheet.css" />
         <option value="$PROJECT_DIR$/bbs.js" />
-        <option value="$PROJECT_DIR$/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/js/bucket_master.js" />
         <option value="$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html" />
         <option value="$PROJECT_DIR$/js/Home.js" />
         <option value="$PROJECT_DIR$/js/bbs.js" />
         <option value="$PROJECT_DIR$/js/MergeSort.js" />
-        <option value="$PROJECT_DIR$/js/BucketMaster.js" />
         <option value="$PROJECT_DIR$/js/AlgoManager.js" />
         <option value="$PROJECT_DIR$/samp1.html" />
+        <option value="$PROJECT_DIR$/js/BucketMaster.js" />
+        <option value="$PROJECT_DIR$/css/stylesheet.css" />
       </list>
     </option>
   </component>
@@ -309,9 +307,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-19.375">
           <folding />
         </state>
       </provider>
@@ -323,9 +321,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../frameworks/css/bootstrap/example/index.html">
+    <entry file="file://$PROJECT_DIR$/js/AlgoManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-19.375">
+        <state line="35" column="25" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -339,21 +337,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/BucketMaster.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="5" selection-start="3504" selection-end="3504" vertical-scroll-proportion="-63.46154">
+        <state line="81" column="102" selection-start="2861" selection-end="2861" vertical-scroll-proportion="-16.153847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/AlgoManager.js">
+    <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+        <state line="35" column="24" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="42" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.6477901">
+        <state line="45" column="46" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.6685083">
           <folding />
         </state>
       </provider>
