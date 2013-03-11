@@ -39,8 +39,8 @@ body{
 
 .switchToolHead{
     position:absolute;
-    width:50%;
-    height:50%;
+    width:30%;
+    height:30%;
     margin-left:auto;
     margin-right: auto;
     border-style:solid;
@@ -75,13 +75,8 @@ body{
 }
 
 #bucketMaster{
-    position:fixed;
-    top:350px;
     white-space: nowrap;
-    background-color: orange;
-    border-style:solid;
-    border-color:black;
-    border-width:3px;
+    background-color: transparent;
 }
 
 .nextIterButton{
