@@ -14,9 +14,7 @@ var menuButtonManager =
 		// if($('#bucketMaster').length != 0)
 		// 	$('#bucketMaster').remove();
 
-		if($('.removable').length != 0){
-			$('.removable').remove();
-		}
+		this.removeAll();
 
 		var aboutMessage = "<p> Often when we are first learning new algorithms we are bombarded" +
 		" by a great deal of text and psuedocode. When I learn new algorithms, I usually" + 
@@ -34,9 +32,29 @@ var menuButtonManager =
 
 	},
 
-	play: function()
+	play: function(curButton)
 	{
 
+		window.open("http://www.stevenmaccoun.info/miscellaneous/samp1.html");
+
+	},
+
+	contact: function(curButton)
+	{
+		toggleActiveSideNav(curButton);
+		this.removeAll();
+
+		var contactMessage = "<p> Please send comments to <font color='blue'>theraccoun@gmail.com </font> </p>";
+		var $contactDiv = $("<div class='well span5 removable'>" + contactMessage + "</div>");
+
+		$('body').append($contactDiv);
+	},
+
+	removeAll: function()
+	{
+		if($('.removable').length != 0){
+			$('.removable').detach();
+		}
 	}
 }
 

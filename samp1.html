@@ -30,9 +30,9 @@
                 <a class="brand" href="#">Concept Before Code</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="active"><a href="#play">Play!</a></li>
-                        <li id="#aboutButton"><a href="#about" onclick="menuButtonManager.about('#aboutButton')">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li id='playButton' class="active"><a href="#play" onclick="menuButtonManager.play('#playButton')">Play!</a></li>
+                        <li id='aboutButton'><a href="#about" onclick="menuButtonManager.about('#aboutButton')">About</a></li>
+                        <li id='contact'><a href="#contact" onclick="menuButtonManager.contact('#contact')">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -72,13 +72,13 @@
         </nav>
     </div>
 
-    <div class="well span7 removable"> <h3> Think you know Bubble sort?</h3>
+    <div class="well span7"> <h3> Think you know Bubble sort?</h3>
         <p> Click the green buttons to swap any two sort elements.</p>
         <p> If you match the exact iterative process of a standard bubble sort algorithm, you win!</p>
     </div>
 
 
-    <div class="btn-group removable">
+    <div class="btn-group">
         <button class="btn btn-danger">Array Size</button>
         <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>

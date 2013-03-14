@@ -8,10 +8,10 @@ var MergeSort = {
         var isRight = isIndex1Correct && isIndex2Correct;
 
         if(!isRight){
-            alert("WOW TERRIBLE YOU SUCK BAD JOB!");
+            alert("Not quite...Try again!");
         }
         else if(isRight && curIter == correctList.length -1){
-            alert("YOU WON GOOD JOB YOU KNOW BUBBLE SORT CONGRATS!");
+            alert("Congratulations...that's correct!");
         }
 
 

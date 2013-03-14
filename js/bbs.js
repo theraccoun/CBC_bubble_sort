@@ -7,10 +7,10 @@ var bubbleSort = {
         var isRight = isIndex1Correct && isIndex2Correct;
 
         if(!isRight){
-            alert("WOW TERRIBLE YOU SUCK BAD JOB!");
+            alert("Not quite...try again!");
         }
         else if(isRight && curIter == correctList.length -1){
-            alert("YOU WON GOOD JOB YOU KNOW BUBBLE SORT CONGRATS!");
+            alert("Good work...you know BubbleSort!");
         }
 
 
