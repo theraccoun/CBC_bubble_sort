@@ -38,5 +38,13 @@ var bubbleSort = {
         for(var j=0; j<correctList.length; ++j){
             console.log(correctList[j]);
         }
+    },
+
+    displayInfo: function(){
+        var $bbsInfo = "<div class='well span7' id='algo-info'> <h3> Think you know Bubble sort?</h3>"
+        + "<p> Click the green buttons to swap any two sort elements.</p>"
+        + "<p> If you match the exact iterative process of a standard bubble sort algorithm, you win!</p></div>";
+        $('.playElements').append($bbsInfo); 
+        $('.playElements').append($arraySize); 
     }
 }

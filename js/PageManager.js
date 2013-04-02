@@ -5,16 +5,19 @@ function toggleActiveSideNav(curButton){
 
 var menuButtonManager = 
 {
+	FADE_OUT: 200,
+	FADE_IN: 600,
+
 	about: function (curButton)
 	{
 		toggleActiveSideNav(curButton);
+		$('#algoMenu').hide();
+		$('.removable').remove();
 		// if($('#playElements').length != 0)
 		// 	$('#playElements').remove();
 		
 		// if($('#bucketMaster').length != 0)
 		// 	$('#bucketMaster').remove();
-
-		this.removeAll();
 
 		var aboutMessage = "<p> Often when we are first learning new algorithms we are bombarded" +
 		" by a great deal of text and psuedocode. When I learn new algorithms, I usually" + 
@@ -27,22 +30,27 @@ var menuButtonManager =
 		" and understanding of the algorithm! </p>";
 
 		var $aboutdiv = $("<div class='well span5 removable'>" + aboutMessage + "</div>");
+		// $aboutdiv.css('visibility', 'hidden');
 
 		$('body').append($aboutdiv);
-
+		// $aboutdiv.css('visibility', 'visible');
+		$aboutdiv.fadeIn();
 	},
 
 	play: function(curButton)
 	{
-
-		window.open("http://www.stevenmaccoun.info/miscellaneous/samp1.html");
+		toggleActiveSideNav(curButton);
+		$('#algoMenu').show();
+		$('.removable').remove();
+		runSort(bubbleSort);
 
 	},
 
 	contact: function(curButton)
 	{
 		toggleActiveSideNav(curButton);
-		this.removeAll();
+		$('#algoMenu').hide();
+		$('.removable').remove();
 
 		var contactMessage = "<p> Please send comments to <font color='blue'>theraccoun@gmail.com </font> </p>";
 		var $contactDiv = $("<div class='well span5 removable'>" + contactMessage + "</div>");
@@ -50,11 +58,5 @@ var menuButtonManager =
 		$('body').append($contactDiv);
 	},
 
-	removeAll: function()
-	{
-		if($('.removable').length != 0){
-			$('.removable').detach();
-		}
-	}
 }
 

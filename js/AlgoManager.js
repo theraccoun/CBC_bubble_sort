@@ -11,12 +11,9 @@ function init(){
     runSort(bubbleSort);
 }
 
-function toggleActiveSideNav(curButton){
-    $('.active').removeClass('active');
-    $(curButton).addClass('active');
-}
 
-function setMaxSortElements(size){
+
+function setMaxSortElements(size, curSortAlgo){
 
     switch(size)
     {
@@ -38,14 +35,28 @@ function setMaxSortElements(size){
 
 function runSort(algo){
 
-    curSortAlgo = algo;
+    $('.playElements').remove();
 
-    if(bucketMaster)
-        bucketMaster.removeMasterFromDom();
+    addPlayDiv();
+    algo.displayInfo();
 
     bucketMaster = new BucketMaster(MAX_SORT_ELEMENTS, PERCENT_BUCKMASTER_PAD, algo);
     bucketMaster.createAndAppend();
 
+}
+
+function commingSoon() {
+
+    $('.playElements').remove();
+
+    var $algo_info = $("<h3 class='well span7'>Coming Soon! </h3>");
+    addPlayDiv();
+    $('.playElements').append($algo_info);   
+}
+
+function addPlayDiv(){
+    var $playElements = $("<div class='row-fluid removable playElements'></div>");
+    $('body').append($playElements);
 }
 
 $(document).ready(function(){

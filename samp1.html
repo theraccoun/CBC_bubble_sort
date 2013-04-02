@@ -5,6 +5,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/Options.js"></script>
     <script type="text/javascript" src="js/BucketMaster.js"></script>
     <script type="text/javascript" src="js/bbs.js"></script>
     <script type="text/javascript" src="js/MergeSort.js"></script>
@@ -40,63 +41,37 @@
     </div>
 </div>
 
-<div class="row-fluid removable" id="playElements">
-    <div class="span3">
-        <nav>
-            <ul class="well nav nav-list">
-                <li class="nav-header">Sorting Algorithms</li>
-                <li class="divider"></li>
-                <li class="active" id="liBubbleSort"><a onclick="toggleActiveSideNav('#liBubbleSort'); runSort(bubbleSort)">
-                    <i class="icon-chevron-right"></i>Bubble Sort </a>
-                </li>
-                <li id="liMergeSort"><a onclick="toggleActiveSideNav('#liMergeSort'); runSort(MergeSort)">
-                    <i class="icon-chevron-right"></i>Merge Sort </a>
-                </li>
-                <li id="liQuickSort"><a onclick="toggleActiveSideNav('#liQuickSort'); runSort(MergeSort)">
-                    <i class="icon-chevron-right"></i>Quick Sort </a>
-                </li>
-                <li id="liHeapSort"><a onclick="toggleActiveSideNav('#liHeapSort'); runSort(MergeSort)">
-                    <i class="icon-chevron-right"></i>Heap Sort </a>
-                </li>
-                <li id="liRadixSort"><a onclick="toggleActiveSideNav('#liRadixSort'); runSort(MergeSort)">
-                    <i class="icon-chevron-right"></i>Radix Sort </a>
-                </li>
+<div class="span3">
+    <nav id='algoMenu'>
+        <ul class="well nav nav-list">
+            <li class="nav-header">Sorting Algorithms</li>
+            <li class="divider"></li>
+            <li class="active" id="liBubbleSort"><a onclick="toggleActiveSideNav('#liBubbleSort'); runSort(bubbleSort)">
+                <i class="icon-chevron-right"></i>Bubble Sort </a>
+            </li>
+            <li id="liMergeSort"><a onclick="toggleActiveSideNav('#liMergeSort'); commingSoon()">
+                <i class="icon-chevron-right"></i>Merge Sort </a>
+            </li>
+            <li id="liQuickSort"><a onclick="toggleActiveSideNav('#liQuickSort'); commingSoon()">
+                <i class="icon-chevron-right"></i>Quick Sort </a>
+            </li>
+            <li id="liHeapSort"><a onclick="toggleActiveSideNav('#liHeapSort'); commingSoon()">
+                <i class="icon-chevron-right"></i>Heap Sort </a>
+            </li>
+            <li id="liRadixSort"><a onclick="toggleActiveSideNav('#liRadixSort'); commingSoon()">
+                <i class="icon-chevron-right"></i>Radix Sort </a>
+            </li>
 
-                <li class="nav-header">Trees and Graphs</li>
-                <li class="divider"></li>
-                <li id="liBinaryTree"><a onclick="toggleActiveSideNav('#liBinaryTree'); runSort(MergeSort)">
-                    <i class="icon-chevron-right"></i>Binary Tree</a>
-                </li>
+            <li class="nav-header">Trees and Graphs</li>
+            <li class="divider"></li>
+            <li id="liBinaryTree"><a onclick="toggleActiveSideNav('#liBinaryTree'); runSort(MergeSort)">
+                <i class="icon-chevron-right"></i>Binary Tree</a>
+            </li>
 
-            </ul>
-        </nav>
-    </div>
-
-    <div class="well span7"> <h3> Think you know Bubble sort?</h3>
-        <p> Click the green buttons to swap any two sort elements.</p>
-        <p> If you match the exact iterative process of a standard bubble sort algorithm, you win!</p>
-    </div>
-
-
-    <div class="btn-group">
-        <button class="btn btn-danger">Array Size</button>
-        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a onclick="setMaxSortElements('Big')">Big</a></li>
-            <li><a onclick="setMaxSortElements('Medium')">Medium</a></li>
-            <li><a onclick="setMaxSortElements('Small')">Small</a></li>
         </ul>
-    </div>
+    </nav>
 </div>
 
-
-
-
-
-
-</div>
 
 
 <script src="http://code.jquery.com/jquery.js"></script>

@@ -25,7 +25,7 @@ function BucketMaster(numElements, percentWidth, sortAlgo){
 
         this.$jqBucketMaster = jQuery('<div/>', {
             id: 'bucketMaster',
-            class: 'offset4 removable'
+            class: 'offset4 removable playElements'
         });
 
         this.$jqBucketMaster.appendTo($('body'));
